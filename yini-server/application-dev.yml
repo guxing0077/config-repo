@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/yimi_user?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    filters: stat,wall
+
+#mybatis plus
+mybatis-plus:
+  mapper-locations: classpath:/mappers/*Mapper.xml
+  typeAliasesPackage: com.lee.yimi.entity
+  typeEnumsPackage: com.lee.yimi.enums
+  global-config:
+    id-type: 0
+    db-column-underline: true
+    refresh-mapper: true
