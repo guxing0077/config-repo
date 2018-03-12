@@ -17,17 +17,6 @@ spring:
     testOnReturn: false
     filters: stat,wall
 
-#mybatis plus
-mybatis-plus:
-  mapper-locations: classpath:/mappers/*Mapper.xml
-  typeAliasesPackage: com.lee.yimi.entity
-  typeEnumsPackage: com.lee.yimi.enums
-  global-config:
-    id-type: 0
-    db-column-underline: true
-    refresh-mapper: true
-server:
-  port: 8081
 logging:
   level:
     com.lee.yimi.mapper: debug
