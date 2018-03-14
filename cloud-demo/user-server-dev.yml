@@ -20,3 +20,5 @@ pring:
 logging:
   level:
     com.lee.mapper: debug
+
+secret-key: ce009ee9-4489-4dd3-bb15-5a83ef1089a4
