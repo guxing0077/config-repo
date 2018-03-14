@@ -16,6 +16,10 @@ pring:
     testOnBorrow: false
     testOnReturn: false
     filters: stat,wall
+  redis:
+      database: 0
+      host: 127.0.0.1
+      port: 6379
 
 logging:
   level:
