@@ -1,11 +1,11 @@
-zuul:
-  add-host-header: true
-  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
-  prefix: /v1/api
-  routes:
-    user-server:
-      path: /user/**
-      strip-prefix: true
+#zuul:
+#  add-host-header: true
+#  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+#  prefix: /v1/api
+#  routes:
+#    user-server:
+#      path: /user/**
+#      strip-prefix: true
 
 spring:
   datasource:
